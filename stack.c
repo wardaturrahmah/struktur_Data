@@ -3,6 +3,7 @@ using namespace std;
 int top=-1;
 int maks=4;
 string tumpukan[4];
+//prosedur untuk mengisi tumpukan data
 void push(string nama)
 {
   if(top>=maks-1)
@@ -15,6 +16,7 @@ void push(string nama)
     tumpukan[top]=nama;
   }
 }
+//prosedur untuk mengeluarkan tumpukan
 void pop()
 {
   if(top>=0)
