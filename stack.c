@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
-int top=-1;
-int maks=4;
+int top=-1; // digunakan untuk indeks yang akan berjalan maju ketika push dan berjalan mundur ketika pop
+int maks=4; //bergantung pada indeks maks array
 string tumpukan[4];
 //prosedur untuk mengisi tumpukan data
 void push(string nama)
@@ -42,11 +42,11 @@ main()
   {
     cout<<"masukkan nama : ";
     cin >> nama;
-    push(nama);
+    push(nama);//memasukkan nama pada tumpukan
   }
   else if(pil==2)
   {
-    pop();
+    pop(); //mengeluarkan data tumpukan
   }
   else
   {
